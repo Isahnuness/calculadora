@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Imóveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="tipoImovel">Tipo de Imóvel:</label>
+        <select id="tipoImovel">
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+        </select>
+
+        <div id="andarInput" class="input-group">
+            <label for="andar">Andar do Apartamento:</label>
+            <input type="number" id="andar">
+        </div>
+
+        <label for="metragem">Metragem do Imóvel:</label>
+        <input type="number" id="metragem">
+
+        <label for="quartos">Número de Quartos:</label>
+        <input type="number" id="quartos">
+
+        <button onclick="calcularImovel()">Calcular</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
